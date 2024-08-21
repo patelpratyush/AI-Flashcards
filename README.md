@@ -1,37 +1,123 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI FlashCard
+
+## Features
+
+# Project Structure
+
+```bash
+.
+├── README.md
+├── app
+│   ├── api
+│   │   ├── checkout_sessions.js
+│   │   └── generate
+│   │       └── route.js
+│   ├── flashcard
+│   │   └── page.js
+│   ├── flashcards
+│   │   └── page.js
+│   ├── generate
+│   │   └── page.js
+│   ├── globals.css
+│   ├── landingpage
+│   │   └── page.js
+│   ├── layout.js
+│   ├── page.js
+│   ├── page.module.css
+│   ├── result
+│   │   └── page.js
+│   ├── sign-in
+│   │   └── [[...sign-in]]
+│   │       └── page.js
+│   └── sign-up
+│       └── [[...sign-up]]
+│           └── page.js
+├── firebase.js
+├── middleware.ts
+└── utils
+    └── get-stripe.js
+```
+
+## Technologies Used
+
+- **Frontend:**
+  - React
+  - Next.js
+  - Material UI
+- **Backend:**
+  - Clerk
+  - Stripe
+  - OpenAI
+  - Firebase
+- **Deployment:**
+  - Vercel
+- **Additional:**
+  - MUI (Material UI)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- Firebase account
+
+### Installation
+
+1. **Clone the repository:**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    https://github.com/patelpratyush/AI-Flashcards
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Navigate to the project directory:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+    cd AI-Flashcards
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Install dependencies**
 
-## Learn More
+```bash
+    npm install
+    # or
+    yarn install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Set up Firebase:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Create a Firebase project and add your Firebase configuration.
+- Set up Firestore, Authentication, and Storage in the Firebase console.
+- Replace the Firebase configuration in `firebase.js` with your project's details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. **Set up Clerk:**
 
-## Deploy on Vercel
+6. **Set up Stripe:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+7. **Run the development server:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# AI-Flashcards
+```bash
+    npm run dev
+    # or
+    yarn dev
+```
+
+8. **Open your browser and go to:**
+
+```bash
+    http://localhost:3000
+```
+
+## Usage
+
+- Sign In: Use your email and password to sign in.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a new Pull Request.
