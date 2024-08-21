@@ -1,3 +1,5 @@
+"use client";
+
 import { useUser } from '@clerk/clerk-react';
 import { Box, Card, CardActionArea, CardContent, Container, Grid, Typography } from '@mui/material';
 import { collection, getDocs } from 'firebase/firestore';

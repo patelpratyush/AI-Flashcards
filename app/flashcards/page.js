@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from 'react';
 import { useUser } from '@clerk/clerk-react';
 import { Container, Grid, Card, CardActionArea, CardContent, Typography } from '@mui/material';

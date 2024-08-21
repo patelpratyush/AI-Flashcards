@@ -1,3 +1,4 @@
+"use client";
 // lets existing users use authentication
 import React from "react";
 import {
