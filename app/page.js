@@ -294,7 +294,7 @@ export default function Home() {
           <DialogTitle id="alert-dialog-title">Get Started with FlashGenie</DialogTitle>
           <DialogContent>
             <DialogContentText>
-            You're about to start with the Free plan. You can generate up to 3 flashcards. Ready to get started?
+              You&apos;re about to start with the Free plan. You can generate up to 3 flashcards. Ready to get started?
             </DialogContentText>
           </DialogContent>
           <DialogActions>
