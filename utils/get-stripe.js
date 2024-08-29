@@ -1,12 +1,12 @@
-import { loadStripe } from '@stripe/stripe-js'
 
-let stripePromise
+import { loadStripe } from "@stripe/stripe-js";
 
+let stripePromise; // This is a promise that resolves to the Stripe object
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY)
+    stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
   }
-  return stripePromise
+  return stripePromise;
 }
 
-export default getStripe
+export default getStripe;
