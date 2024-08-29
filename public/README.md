@@ -1,6 +1,6 @@
-# FlashGenie
+# MemoGenie
 
-FlashGenie is a flashcard generation web application built with Node.js. Designed to enhance learning and memorization, FlashGenie offers a seamless experience for creating, saving, and reviewing flashcards. It includes robust features like user authentication, subscription management, and local storage tracking, making it a powerful tool for both students and professionals.
+MemoGenie is a flashcard generation web application built with Node.js. Designed to enhance learning and memorization, MemoGenie offers a seamless experience for creating, saving, and reviewing flashcards. It includes robust features like user authentication, subscription management, and local storage tracking, making it a powerful tool for both students and professionals.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ FlashGenie is a flashcard generation web application built with Node.js. Designe
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-- [Project Structure](#projectstructure)
+
 
 ## Features
 
@@ -43,15 +43,12 @@ Before you begin, ensure you have the following installed on your system:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/patelpratyush/AI-Flashcards
-   cd AI-Flashcards
-   ```
-
+   git clone https://github.com/Erlisja/FlashCards-saas.git
+   cd flashcards-saas
 2. **Set up environment variables:
 
 Create a .env file in the root of the project and add the following environment variables:
 Run the development server:
-
 ```bash
 NEXT_PUBLIC_STRIPE_PUBLIC_KEY=<your_tripe_public_key>
 STRIPE_SECRET_KEY = <your_secret_key>
@@ -59,7 +56,6 @@ OPENAI_API_KEY= <your_openai_api_key>
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= <your_next_public_clerk_key>
 CLERK_SECRET_KEY=<your_clerk_secret_key>
 ```
-
 ```bash
 npm run dev
 # or
@@ -76,23 +72,23 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 ### Usage
 
-#### Sign Up/Log In
+#### Sign Up/Log In:
 
 - New users can sign up, and existing users can log in using the authentication system powered by Clerk.
 
-#### Create Flashcards
+#### Create Flashcards:
 
 - Navigate to the flashcards creation page, enter the topic, front, and back content, and save your flashcards.
 
-#### Manage Subscriptions
+#### Manage Subscriptions:
 
 - Users can subscribe to the Basic or Pro plan via Stripe to unlock additional features and storage.
 
-#### Track Flashcard Generation
+#### Track Flashcard Generation:
 
 - The app tracks the number of flashcards generated using local storage and alerts the user when they reach their limit.
 
-### Technologies Used
+  ### Technologies Used
 
 - **Node.js**: JavaScript runtime environment for building the backend.
 - **Next.js**: React framework for building server-side rendered applications.
@@ -117,42 +113,3 @@ Contributions are welcome! Please follow these steps to contribute:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Project Structure
-
-```bash
-.
-├── README.md
-├── app
-│   ├── api
-│   │   ├── checkout_session
-│   │   │   └── route.js
-│   │   └── generate
-│   │       └── route.js
-│   ├── flashcard
-│   │   └── page.js
-│   ├── flashcards
-│   │   └── page.js
-│   ├── generate
-│   │   └── page.js
-│   ├── globals.css
-│   ├── layout.js
-│   ├── page.js
-│   ├── page.module.css
-│   ├── result
-│   │   └── page.js
-│   ├── sign-in
-│   │   └── page.js
-│   └── sign-up
-│       └── page.js
-├── firebase.js
-├── middleware.ts
-├── public
-│   ├── README.md
-│   ├── bg1.png
-│   ├── generate_bg.png
-│   ├── next.svg
-│   ├── question-mark.png
-│   └── vercel.svg
-└── utils
-    └── get-stripe.js
-```
