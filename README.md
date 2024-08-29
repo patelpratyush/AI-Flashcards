@@ -16,9 +16,9 @@ FlashGenie is a flashcard generation web application built with Node.js. Designe
 
 ## Features
 
-- **User Authentication:** Powered by [Clerk](https://clerk.dev/), MemoGenie provides secure and efficient sign-up, login, and logout functionalities.
+- **User Authentication:** Powered by [Clerk](https://clerk.dev/), FlashGenie provides secure and efficient sign-up, login, and logout functionalities.
   
-- **Subscription Management:** Integrated with [Stripe](https://stripe.com/), MemoGenie offers two subscription plans:
+- **Subscription Management:** Integrated with [Stripe](https://stripe.com/), FlashGenie offers two subscription plans:
   - **Basic Plan:** $5/month, allows up to 100 flashcards/month, with limited storage.
   - **Pro Plan:** $10/month, offers unlimited flashcards and storage, along with priority support.
   
