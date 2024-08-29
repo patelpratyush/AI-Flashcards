@@ -12,7 +12,7 @@ FlashGenie is a flashcard generation web application built with Node.js. Designe
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-- [Project Structure](#projectstructure)
+- [Project Structure](#project-structure)
 
 ## Features
 
